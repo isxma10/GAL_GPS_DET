@@ -1,0 +1,16 @@
+function GIOVEL1Bcode = generateL1Bcode(chips)
+% generateL1Bcode.m generates one of the PRN code transmitted by the GIOVE
+% satellite on L1 B
+%
+fullCode= rot90(load('L1-B-1.dat'));
+%--- Generate all G1 signal chips based on the G1 feedback polynomial -----
+for i=1:chips
+    
+    if fullCode(i)== 1
+        
+    
+end
+
+
+%--- Form single sample code by multiplying G1 and G2 -----------------
+% GIOVEL1Bcode = -(g1 .* g2);
